@@ -1,10 +1,34 @@
 /* All styles for your Card Components live here */
 
+a {
+    text-decoration: none;
+}
 .card-banner {
     width: 100%;
     border-radius: 5px;
 }
 
+.card-content {
+    box-sizing: border-box;
+    padding:  0 15px;
+}
+
+.card-content h2 {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.card-content p {
+    color: black;
+}
+
+.card-content .react-link {
+    color: gray;
+}
+
 .card-container {
-    width: 80%;
+    width: 88%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    float: right;
 }
