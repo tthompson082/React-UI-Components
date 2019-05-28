@@ -1,0 +1,11 @@
+.display {
+    box-sizing: border-box;
+    background: black;
+    color: white;
+    margin: 0;
+    height: 63px;
+    text-align: end;
+    padding-right: 5px;
+    padding-top: 12px;
+    border: .5px solid lightgray;
+}

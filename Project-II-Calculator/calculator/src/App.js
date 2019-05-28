@@ -1,21 +1,70 @@
 import React from 'react';
 import './App.css';
 
+import Display from './components/DisplayComponents/CalculatorDisplay';
+import NumberButton from './components/ButtonComponents/NumberButton';
+import ActionButton from './components/ButtonComponents/ActionButton';
+
 const App = () => {
+  const clear = 'clear';
+  const division = '÷';
+
+  const seven = '7';
+  const eight = '8';
+  const nine = '9';
+  const multiplication = 'X';
+
+  const four = '4';
+  const five = '5';
+  const six = '6';
+  const subtraction = '-';
+
+  const one = '1';
+  const two = '2';
+  const three = '3';
+  const addition = '+';
+
+  const zero = '0';
+  const equals = '=';
+
+  const actionButton = 'action-button';
+  const number = 'number';
+  const symbol = 'symbol';
+  
   return (
-    <div>
-      <h3>Welcome to React Calculator</h3>
-      <p>
-        We have given you a starter project. You'll want to build out your
-        components in their respective files, remove this code and replace it
-        with the proper components.
-      </p>
-      <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
-      </p>
+    <div className='app'>
+      <Display />
+      
+      <div className='row-one'>
+        <ActionButton buttonStyle={actionButton} text={clear} />
+        <NumberButton buttonStyle={symbol} text={division} />
+      </div>
+
+      <div className='row-two'>
+        <NumberButton buttonStyle={number} text={seven} />
+        <NumberButton buttonStyle={number} text={eight} />
+        <NumberButton buttonStyle={number} text={nine} />
+        <NumberButton buttonStyle={symbol} text={multiplication} />
+      </div>
+
+      <div className='row-three'>
+        <NumberButton buttonStyle={number} text={four} />
+        <NumberButton buttonStyle={number} text={five} />
+        <NumberButton buttonStyle={number} text={six} />
+        <NumberButton buttonStyle={symbol} text={subtraction} />
+      </div>
+
+      <div className='row-four'>
+        <NumberButton buttonStyle={number} text={one} />
+        <NumberButton buttonStyle={number} text={two} />
+        <NumberButton buttonStyle={number} text={three} />
+        <NumberButton buttonStyle={symbol} text={addition} />
+      </div>
+
+      <div className='row-five'>
+        <ActionButton buttonStyle={actionButton} text={zero} />
+        <NumberButton buttonStyle={symbol} text={equals} />
+      </div>
     </div>
   );
 };

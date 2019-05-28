@@ -1,0 +1,25 @@
+.app {
+    max-width: 225px;
+    display: block;
+    margin: 100px auto;
+}
+
+.row-one {
+    display:flex;
+}
+
+.row-two {
+    display: flex;
+}
+
+.row-three {
+    display: flex;
+}
+
+.row-four {
+    display: flex;
+}
+
+.row-five {
+    display: flex;
+}
